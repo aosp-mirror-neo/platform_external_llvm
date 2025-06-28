@@ -11,8 +11,6 @@ cc_library_static {
     name: "libLLVMTableGen",
     defaults: ["llvm-defaults-no-generated-headers"],
     cflags: [
-        "-W",
-        "-Wall",
         "-Wno-unused-lambda-capture",
         "-Wno-unused-parameter",
     ],

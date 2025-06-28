@@ -29,8 +29,6 @@ cc_library_static {
     host_supported: true,
     include_dirs: ["external/compiler-rt/include"],
     cflags: [
-        "-W",
-        "-Wall",
         "-Werror",
         "-Wno-unused-lambda-capture",
         "-Wno-unused-parameter",
@@ -48,8 +46,6 @@ cc_library_static {
     name: "libLLVMFuzzer",
     host_supported: true,
     cflags: [
-        "-W",
-        "-Wall",
         "-Werror",
         "-Wno-unused-lambda-capture",
         "-Wno-unused-parameter",
