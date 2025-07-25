@@ -25,6 +25,7 @@ cc_defaults {
         "-Wno-unused-but-set-variable",
         "-Wno-unused-lambda-capture",
         "-Wno-unused-parameter",
+        "-Wno-nonnull",
     ],
     export_header_lib_headers: ["llvm-headers"],
     target: {
