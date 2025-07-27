@@ -88,6 +88,7 @@ llvm_defaults {
         "-Wno-deprecated-declarations",
         "-Wno-implicit-fallthrough",
         "-Wno-non-c-typedef-for-linkage",
+        "-Wno-nontrivial-memcall",
         "-Wno-range-loop-construct",
         "-Wno-maybe-uninitialized",
         "-Wno-missing-field-initializers",
