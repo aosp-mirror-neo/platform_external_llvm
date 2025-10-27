@@ -35,11 +35,12 @@ var (
 	llvmTblgen = pctx.HostBinToolVariable("llvmTblgen", "llvm-tblgen")
 
 	tblgenRule = pctx.StaticRule("tblgenRule", blueprint.RuleParams{
-		Depfile:     "${out}.d",
-		Deps:        blueprint.DepsGCC,
-		Command:     "${llvmTblgen} ${includes} ${genopt} -d ${out}.d -o ${out} ${in}",
-		CommandDeps: []string{"${llvmTblgen}"},
-		Description: "LLVM TableGen $in => $out",
+		Depfile:         "${out}.d",
+		Deps:            blueprint.DepsGCC,
+		Command:         "${llvmTblgen} ${includes} ${genopt} -d ${out}.d -o ${out} ${in}",
+		CommandDeps:     []string{"${llvmTblgen}"},
+		Description:     "LLVM TableGen $in => $out",
+		SandboxDisabled: true,
 	}, "includes", "genopt")
 )
 
