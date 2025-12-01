@@ -94,6 +94,7 @@ llvm_defaults {
         "-Wno-missing-field-initializers",
         "-Wno-unused-but-set-variable",
         "-Wno-unused-parameter",
+        "-Wno-unnecessary-virtual-specifier",
         "-Wwrite-strings",
         "-Dsprintf=sprintf",
     ],
